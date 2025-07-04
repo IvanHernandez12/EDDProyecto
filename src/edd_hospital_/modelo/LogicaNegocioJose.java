@@ -155,12 +155,10 @@ public class LogicaNegocioJose
                     if (temporal != null)
                     {
                         hospitalesVecinos[0] = multilista.buscarEnMultilista(hospital.getArb().getEt(), temporal);
-                        System.out.println("vecino izq encontrado: " + hospitalesVecinos[0].getEt());
 
                     } else
                     {
 
-                        System.out.println("vecino izq encontrado: " + aux1.getEt());
                         hospitalesVecinos[0] = aux1;
                     }
                     break;
@@ -180,11 +178,9 @@ public class LogicaNegocioJose
                     if (temporal != null)
                     {
                         hospitalesVecinos[1] = multilista.buscarEnMultilista(hospital.getArb().getEt(), temporal);
-                        System.out.println("vecino derecho encontrado: " + hospitalesVecinos[0].getEt());
 
                     } else
                     {
-                        System.out.println("vecino derecho encontrado: " + aux2.getEt());
                         hospitalesVecinos[1] = aux2;
                     }
 
@@ -230,7 +226,6 @@ public class LogicaNegocioJose
 
         if (vecinosNivel3[0] != null)
         {
-            System.out.println("Se van a mover al vecino izq");
             if (especialidadesNivel3Eliminadas[1].getAbj() != null)
             {
                 moverPacientesOncoAHospitalVecino(especialidadesNivel3Eliminadas[1], vecinosNivel3[0]);
@@ -244,7 +239,6 @@ public class LogicaNegocioJose
         }
         if (vecinosNivel3[1] != null)
         {
-            System.out.println("Se van a mover al vecino derecho");
 
             if (especialidadesNivel3Eliminadas[1].getAbj() != null)
             {
@@ -260,7 +254,6 @@ public class LogicaNegocioJose
         ListaDLML auxiliar1 = new ListaDLML(especialidadesNivel3Eliminadas[1].getAbj());
         while (especialidadesNivel3Eliminadas[1].getAbj() != null)
         {
-            System.out.println("Se va mover onco a la bicola");
             NodoML eliminado;
 
             if (auxiliar1.getR() != null)
@@ -280,7 +273,6 @@ public class LogicaNegocioJose
         while (especialidadesNivel3Eliminadas[2].getAbj() != null)
         {
 
-            System.out.println("Se va mover neuro a la bicola");
             NodoML eliminado;
             if (auxiliar2.getR() != null)
             {
@@ -347,8 +339,6 @@ public class LogicaNegocioJose
         if (especialidadOrigen.getObj() instanceof Especialidad && especialidadDestino.getObj() instanceof Especialidad destino)
         {
 
-            System.out.println("pacientes origen" + Especialidad.getNumeroDePacientes(especialidadOrigen));
-            System.out.println("pacientes destino" + Especialidad.getNumeroDePacientes(especialidadDestino));
             while (Especialidad.getNumeroDePacientes(especialidadOrigen) > 0
                     && destino.getNumeroDeCamas() > Especialidad.getNumeroDePacientes(especialidadDestino))
 
@@ -361,8 +351,6 @@ public class LogicaNegocioJose
                     if (eliminado != null)
                     {
                         eliminado.setArb(null);
-                        System.out.println("Eliminado: " + eliminado.getEt());
-                        System.out.println("siguiente: " + eliminado.getSig());
                     }
                 }
                 especialidadOrigen.setAbj(auxiliar1.getR());
@@ -373,14 +361,10 @@ public class LogicaNegocioJose
                     eliminado.setArb(especialidadDestino);
                     auxiliar.inserta(eliminado);
                     especialidadDestino.setAbj(auxiliar.getR());
-                    System.out.println(auxiliar.desp());
                 }
             }
             //
-            System.out.println("pacientes movidos");
 
-            System.out.println("pacientes origen" + Especialidad.getNumeroDePacientes(especialidadOrigen));
-            System.out.println("pacientes destino" + Especialidad.getNumeroDePacientes(especialidadDestino));
         }
     }
 
@@ -414,7 +398,6 @@ public class LogicaNegocioJose
                 JOptionPane.showMessageDialog(null, "Se asigno el paciente: " + siguientePacienteEnEspera.getEt() + " a una cama de oncologia");
             } else
             {
-                System.out.println("no hay paciente de onco en espera");
             }
 
         } else
@@ -427,10 +410,7 @@ public class LogicaNegocioJose
                 {
                     multilista.inserta(siguientePacienteEnEspera, rutaActual);
                     JOptionPane.showMessageDialog(null, "Se asigno el paciente: " + siguientePacienteEnEspera.getEt() + " a una cama de neurologia");
-                } else
-                {
-                    System.out.println("no hay paciente de neurologia en espera");
-                }
+                } 
             }
         }
 

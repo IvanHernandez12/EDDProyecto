@@ -81,8 +81,6 @@ public class RemodelacionHospitales
 
             }
         }
-        System.out.println("Hospitales remodelacion: " + listaRemodelacion.desp());
-        System.out.println(multilista.desp());
     }
 
     /**
@@ -119,8 +117,6 @@ public class RemodelacionHospitales
             throw new IllegalStateException("Hospital temporal no encontrado");
         }
         String[] valores = (String[]) datoEliminado.getObj();
-        System.out.println(hospital);
-        System.out.println("dependencia: " + dependencia + " [1] = " + valores[1]);
         hospitalTemporal = multilista.buscarEnMultilista(dependencia, valores[1]);
         if (hospitalTemporal == null)
         {
@@ -133,7 +129,6 @@ public class RemodelacionHospitales
             multilista.inserta(auxL2, dependencia, hospital);
             auxL = multilista.buscarEnMultilista(dependencia, valores[1]).getAbj();
         }
-        System.out.println("Hospitales Remoelados: " + listaRemodelacion.desp());
         multilista.elimina(dependencia, valores[1]);
 
     }
@@ -154,7 +149,6 @@ public class RemodelacionHospitales
                     ListaDLML listaAux = new ListaDLML(listaRemodelacion.getR());
                     eliminado = listaAux.elimina("eliminar1234");
                     listaRemodelacion.setR(listaAux.getR());
-                    System.out.println("Hospitales remodelados: :" + listaRemodelacion.desp());
                     return eliminado;
                 }
             }

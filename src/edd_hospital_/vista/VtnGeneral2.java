@@ -120,7 +120,7 @@ public class VtnGeneral2 extends javax.swing.JFrame
         btnNuevo = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnModificar = new javax.swing.JButton();
-        btnEspera = new javax.swing.JButton();
+        btnMostrarPacientesEnEspera = new javax.swing.JButton();
         btnAltaPaciente = new javax.swing.JButton();
         btnRemodelacion = new javax.swing.JButton();
         btnRemodelacionTerminada = new javax.swing.JButton();
@@ -173,15 +173,15 @@ public class VtnGeneral2 extends javax.swing.JFrame
         btnModificar.setText("Modificar");
         btnModificar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btnEspera.setBackground(new java.awt.Color(153, 153, 255));
-        btnEspera.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        btnEspera.setText("Mostrar pacientes en espera");
-        btnEspera.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnEspera.addActionListener(new java.awt.event.ActionListener()
+        btnMostrarPacientesEnEspera.setBackground(new java.awt.Color(153, 153, 255));
+        btnMostrarPacientesEnEspera.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        btnMostrarPacientesEnEspera.setText("Mostrar pacientes en espera");
+        btnMostrarPacientesEnEspera.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnMostrarPacientesEnEspera.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                btnEsperaActionPerformed(evt);
+                btnMostrarPacientesEnEsperaActionPerformed(evt);
             }
         });
 
@@ -221,7 +221,7 @@ public class VtnGeneral2 extends javax.swing.JFrame
             .addGroup(jpnBotonesLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnEspera, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnMostrarPacientesEnEspera, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnRemodelacion, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(48, 48, 48)
                 .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -245,7 +245,7 @@ public class VtnGeneral2 extends javax.swing.JFrame
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnRemodelacionTerminada)
-                    .addComponent(btnEspera))
+                    .addComponent(btnMostrarPacientesEnEspera))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnBotonesLayout.createSequentialGroup()
                 .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -288,17 +288,17 @@ public class VtnGeneral2 extends javax.swing.JFrame
                 .addGap(18, 18, 18)
                 .addComponent(panelNavegacion, javax.swing.GroupLayout.DEFAULT_SIZE, 785, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(jpnSuperiorLayout.createSequentialGroup()
-                .addGap(314, 314, 314)
-                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnSuperiorLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(270, 270, 270))
         );
         jpnSuperiorLayout.setVerticalGroup(
             jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnSuperiorLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(13, 13, 13)
                 .addComponent(lblTitulo)
-                .addGap(25, 25, 25)
+                .addGap(18, 18, 18)
                 .addGroup(jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelNavegacion, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE))
@@ -370,19 +370,19 @@ public class VtnGeneral2 extends javax.swing.JFrame
         this.btnNuevo = btnNuevo;
     }
 
-    private void btnEsperaActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnEsperaActionPerformed
-    {//GEN-HEADEREND:event_btnEsperaActionPerformed
+    private void btnMostrarPacientesEnEsperaActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnMostrarPacientesEnEsperaActionPerformed
+    {//GEN-HEADEREND:event_btnMostrarPacientesEnEsperaActionPerformed
 
-    }//GEN-LAST:event_btnEsperaActionPerformed
+    }//GEN-LAST:event_btnMostrarPacientesEnEsperaActionPerformed
 
-    public JButton getBtnEspera()
+    public JButton getBtnPacienteEnEspera()
     {
-        return btnEspera;
+        return btnMostrarPacientesEnEspera;
     }
 
     public void setBtnEspera(JButton btnEspera)
     {
-        this.btnEspera = btnEspera;
+        this.btnMostrarPacientesEnEspera = btnEspera;
     }
 
     private void jtbTablaMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jtbTablaMouseClicked
@@ -551,10 +551,10 @@ public class VtnGeneral2 extends javax.swing.JFrame
     {
         if (nivelActual == Niveles.HOSPITAL)
         {
-            btnEspera.setVisible(true);
+            btnMostrarPacientesEnEspera.setVisible(true);
         } else
         {
-            btnEspera.setVisible(false);
+            btnMostrarPacientesEnEspera.setVisible(false);
         }
     }
 
@@ -601,8 +601,8 @@ public class VtnGeneral2 extends javax.swing.JFrame
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAltaPaciente;
     private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton btnEspera;
     private javax.swing.JButton btnModificar;
+    private javax.swing.JButton btnMostrarPacientesEnEspera;
     private javax.swing.JButton btnNuevo;
     private javax.swing.JButton btnRemodelacion;
     private javax.swing.JButton btnRemodelacionTerminada;
