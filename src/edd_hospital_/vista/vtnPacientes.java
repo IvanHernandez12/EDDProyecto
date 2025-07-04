@@ -50,7 +50,6 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
     {
 
         Fondo = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
         Paciente = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -61,9 +60,9 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
         btnGuardar = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jtfClave = new javax.swing.JTextField();
-        Cancelar = new javax.swing.JButton();
         jcbEstatus = new javax.swing.JComboBox<>();
         jcbSexo = new javax.swing.JComboBox<>();
+        Cancelar1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -71,36 +70,21 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
         Fondo.setBackground(new java.awt.Color(153, 153, 255));
         Fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(102, 204, 255));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 152, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
-
-        Fondo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 450));
-
         Paciente.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel9.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel9.setText("Nombre:");
 
-        jLabel10.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel10.setText("Estatus:");
 
-        jLabel11.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel11.setText("Vigencia:");
 
-        jLabel12.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel12.setText("Sexo:");
 
-        jtfVigencia.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfVigencia.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfVigencia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfVigencia.addKeyListener(new java.awt.event.KeyAdapter()
         {
@@ -110,7 +94,7 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
             }
         });
 
-        jtfNombre.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfNombre.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfNombre.addActionListener(new java.awt.event.ActionListener()
         {
@@ -131,10 +115,10 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
             }
         });
 
-        btnGuardar.setBackground(new java.awt.Color(153, 204, 255));
-        btnGuardar.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        btnGuardar.setBackground(new java.awt.Color(153, 153, 255));
+        btnGuardar.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         btnGuardar.setText("Guardar");
-        btnGuardar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        btnGuardar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnGuardar.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -143,11 +127,11 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
             }
         });
 
-        jLabel13.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel13.setText("CVE:");
 
         jtfClave.setEditable(false);
-        jtfClave.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfClave.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfClave.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfClave.setFocusable(false);
         jtfClave.addActionListener(new java.awt.event.ActionListener()
@@ -165,25 +149,25 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
             }
         });
 
-        Cancelar.setBackground(new java.awt.Color(153, 204, 255));
-        Cancelar.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        Cancelar.setText("Cancelar");
-        Cancelar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        Cancelar.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                CancelarActionPerformed(evt);
-            }
-        });
-
-        jcbEstatus.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
+        jcbEstatus.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jcbEstatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Opciones-", "Activo", "Inactivo" }));
         jcbEstatus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jcbSexo.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
+        jcbSexo.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jcbSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Opciones-", "Masculino", "Femenino" }));
         jcbSexo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        Cancelar1.setBackground(new java.awt.Color(153, 153, 255));
+        Cancelar1.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
+        Cancelar1.setText("Cerrar");
+        Cancelar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Cancelar1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                Cancelar1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PacienteLayout = new javax.swing.GroupLayout(Paciente);
         Paciente.setLayout(PacienteLayout);
@@ -195,29 +179,28 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel13)
                     .addComponent(jLabel9))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jtfClave, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
-                    .addComponent(jtfNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
-                    .addComponent(jcbSexo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jcbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(PacienteLayout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addComponent(jLabel11))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PacienteLayout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jcbEstatus, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jtfVigencia))
-                .addContainerGap(78, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PacienteLayout.createSequentialGroup()
-                .addContainerGap(202, Short.MAX_VALUE)
-                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(146, 146, 146)
-                .addComponent(Cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(256, 256, 256))
+                        .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnGuardar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(PacienteLayout.createSequentialGroup()
+                                .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jtfNombre, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
+                                    .addComponent(jtfClave, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addGap(45, 45, 45)
+                                .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(18, 18, 18)
+                        .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jcbEstatus, 0, 191, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PacienteLayout.createSequentialGroup()
+                                .addComponent(Cancelar1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(33, 33, 33))
+                            .addComponent(jtfVigencia))))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         PacienteLayout.setVerticalGroup(
             PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,28 +217,27 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
                             .addComponent(jtfClave, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11)
-                    .addComponent(jtfVigencia, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(PacienteLayout.createSequentialGroup()
-                        .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9)
-                            .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel12)
-                            .addComponent(jcbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
+                    .addComponent(jLabel9)
+                    .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel11)
+                        .addComponent(jtfVigencia, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
                 .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29))
+                    .addComponent(jLabel12)
+                    .addComponent(jcbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50)
+                .addGroup(PacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cancelar1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
-        Fondo.add(Paciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 830, -1));
+        Fondo.add(Paciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 710, 330));
 
-        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 36)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("SansSerif", 0, 36)); // NOI18N
         jLabel6.setText("-PACIENTES-");
-        Fondo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, -1, -1));
+        Fondo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -272,27 +254,97 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-     private void jtfVigenciaKeyTyped(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfVigenciaKeyTyped
-     {//GEN-HEADEREND:event_jtfVigenciaKeyTyped
-         eliminaCopyPasteCut(evt);
-         Validaciones.validaEntero(evt, 10, jtfVigencia.getText());
-         char c = evt.getKeyChar();
-         if (!(Character.isDigit(c) || c == evt.VK_BACK_SPACE || c == evt.VK_DELETE))
-         {
-             evt.consume();
-             return;
-         }
-         ponerDiagonal(jtfVigencia);
+    private void jtfClaveKeyTyped(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfClaveKeyTyped
+    {//GEN-HEADEREND:event_jtfClaveKeyTyped
+        Validaciones.validaAlfanumerico(evt, 4, jtfClave.getText());
+        CtrlInterfaz.habilita(rootPaneCheckingEnabled, btnGuardar);
+        eliminaCopyPasteCut(evt);
+    }//GEN-LAST:event_jtfClaveKeyTyped
 
-         if (jtfVigencia.getText().length() == 10)
-         {
-             if (!fechaValida(jtfVigencia.getText()))
-             {
-                 JOptionPane.showMessageDialog(null, "Fecha inválida. Asegúrate de que el día sea <= 30, el mes esté entre 1 y 12 y el año entre 2000 y 2050.");
-                 jtfVigencia.setText("");
-             }
-         }
-     }//GEN-LAST:event_jtfVigenciaKeyTyped
+    private void jtfClaveActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jtfClaveActionPerformed
+    {//GEN-HEADEREND:event_jtfClaveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfClaveActionPerformed
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnGuardarActionPerformed
+    {//GEN-HEADEREND:event_btnGuardarActionPerformed
+        try
+        {
+            String nombre = jtfNombre.getText();
+            String estatus = jcbEstatus.getSelectedItem().toString();
+            String vigencia = jtfVigencia.getText();
+            String sexoString = jcbSexo.getSelectedItem().toString();
+
+            if (nombre.isEmpty() || vigencia.isEmpty() || jcbSexo.getSelectedIndex() == 0 || jcbEstatus.getSelectedIndex() == 0)
+            {
+                JOptionPane.showMessageDialog(this, "Por favor, complete todos los campos",
+                        "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
+            if (!vigencia.matches("\\d{2}/\\d{2}/\\d{4}"))
+            {
+                JOptionPane.showMessageDialog(this, "Formato de vigencia inválido. Use DD/MM/AAAA",
+                        "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
+            char sexoChar = sexoString.equals("Masculino") ? 'M' : 'F';
+            CreadorDeNodos n = new CreadorDeNodos();
+            this.nodoPaciente = n.NodoPaciente(estatus, vigencia, sexoChar, nombre);
+            objetoEditable = new Paciente(estatus, vigencia, sexoChar, nombre, jtfClave.getText());
+            dispose();
+
+        } catch (RuntimeException ex)
+        {
+            JOptionPane.showMessageDialog(this, "Error al registrar el paciente: " + ex.getMessage(),
+                    "Error", JOptionPane.ERROR_MESSAGE);
+
+        }
+    }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void jtfNombreKeyTyped(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfNombreKeyTyped
+    {//GEN-HEADEREND:event_jtfNombreKeyTyped
+        Validaciones.validaAlfabeticos(evt, 35, jtfNombre.getText());
+        eliminaCopyPasteCut(evt);
+    }//GEN-LAST:event_jtfNombreKeyTyped
+
+    private void jtfNombreKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfNombreKeyPressed
+    {//GEN-HEADEREND:event_jtfNombreKeyPressed
+        eliminaCopyPasteCut(evt);
+        Validaciones.validaAlfabeticos(evt, 30, jtfNombre.getText());
+    }//GEN-LAST:event_jtfNombreKeyPressed
+
+    private void jtfNombreActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jtfNombreActionPerformed
+    {//GEN-HEADEREND:event_jtfNombreActionPerformed
+
+    }//GEN-LAST:event_jtfNombreActionPerformed
+
+    private void jtfVigenciaKeyTyped(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfVigenciaKeyTyped
+    {//GEN-HEADEREND:event_jtfVigenciaKeyTyped
+        eliminaCopyPasteCut(evt);
+        Validaciones.validaEntero(evt, 10, jtfVigencia.getText());
+        char c = evt.getKeyChar();
+        if (!(Character.isDigit(c) || c == evt.VK_BACK_SPACE || c == evt.VK_DELETE))
+        {
+            evt.consume();
+            return;
+        }
+        ponerDiagonal(jtfVigencia);
+
+        if (jtfVigencia.getText().length() == 10)
+        {
+            if (!fechaValida(jtfVigencia.getText()))
+            {
+                JOptionPane.showMessageDialog(null, "Fecha inválida. Asegúrate de que el día sea <= 30, el mes esté entre 1 y 12 y el año entre 2000 y 2050.");
+                jtfVigencia.setText("");
+            }
+        }
+    }//GEN-LAST:event_jtfVigenciaKeyTyped
+
+    private void Cancelar1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_Cancelar1ActionPerformed
+    {//GEN-HEADEREND:event_Cancelar1ActionPerformed
+        this.dispose();    }//GEN-LAST:event_Cancelar1ActionPerformed
     private static void ponerDiagonal(JTextField textField)
     {
         String text = textField.getText().replaceAll("/", "");
@@ -349,82 +401,6 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
         }
     }
 
-
-     private void jtfNombreKeyTyped(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfNombreKeyTyped
-     {//GEN-HEADEREND:event_jtfNombreKeyTyped
-         Validaciones.validaAlfabeticos(evt, 35, jtfNombre.getText());
-         eliminaCopyPasteCut(evt);
-
-     }//GEN-LAST:event_jtfNombreKeyTyped
-
-     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnGuardarActionPerformed
-     {//GEN-HEADEREND:event_btnGuardarActionPerformed
-         try
-         {
-             String nombre = jtfNombre.getText();
-             String estatus = jcbEstatus.getSelectedItem().toString();
-             String vigencia = jtfVigencia.getText();
-             String sexoString = jcbSexo.getSelectedItem().toString();
-
-             if (nombre.isEmpty() || vigencia.isEmpty() || jcbSexo.getSelectedIndex() == 0 || jcbEstatus.getSelectedIndex() == 0)
-             {
-                 JOptionPane.showMessageDialog(this, "Por favor, complete todos los campos",
-                         "Error", JOptionPane.ERROR_MESSAGE);
-                 return;
-             }
-
-             if (!vigencia.matches("\\d{2}/\\d{2}/\\d{4}"))
-             {
-                 JOptionPane.showMessageDialog(this, "Formato de vigencia inválido. Use DD/MM/AAAA",
-                         "Error", JOptionPane.ERROR_MESSAGE);
-                 return;
-             }
-
-             char sexoChar = sexoString.equals("Masculino") ? 'M' : 'F';
-             CreadorDeNodos n = new CreadorDeNodos();
-             this.nodoPaciente = n.NodoPaciente(estatus, vigencia, sexoChar, nombre);
-             objetoEditable = new Paciente(estatus, vigencia, sexoChar, nombre, jtfClave.getText());
-             dispose();
-
-         } catch (RuntimeException ex)
-         {
-             JOptionPane.showMessageDialog(this, "Error al registrar el paciente: " + ex.getMessage(),
-                     "Error", JOptionPane.ERROR_MESSAGE);
-
-         }
-     }//GEN-LAST:event_btnGuardarActionPerformed
-
-     private void jtfClaveKeyTyped(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfClaveKeyTyped
-     {//GEN-HEADEREND:event_jtfClaveKeyTyped
-         Validaciones.validaAlfanumerico(evt, 4, jtfClave.getText());
-         CtrlInterfaz.habilita(rootPaneCheckingEnabled, btnGuardar);
-         eliminaCopyPasteCut(evt);
-
-     }//GEN-LAST:event_jtfClaveKeyTyped
-
-     private void CancelarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_CancelarActionPerformed
-     {//GEN-HEADEREND:event_CancelarActionPerformed
-         CtrlInterfaz.limpia(jtfNombre);
-
-         CtrlInterfaz.limpia(jcbEstatus);
-         CtrlInterfaz.limpia(jtfVigencia);
-     }//GEN-LAST:event_CancelarActionPerformed
-
-    private void jtfClaveActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jtfClaveActionPerformed
-    {//GEN-HEADEREND:event_jtfClaveActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtfClaveActionPerformed
-
-    private void jtfNombreActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jtfNombreActionPerformed
-    {//GEN-HEADEREND:event_jtfNombreActionPerformed
-    }//GEN-LAST:event_jtfNombreActionPerformed
-
-    private void jtfNombreKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfNombreKeyPressed
-    {//GEN-HEADEREND:event_jtfNombreKeyPressed
-        eliminaCopyPasteCut(evt);
-        Validaciones.validaAlfabeticos(evt, 30, jtfNombre.getText());
-    }//GEN-LAST:event_jtfNombreKeyPressed
-
     /**
      * @param args the command line arguments
      */
@@ -472,7 +448,7 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Cancelar;
+    private javax.swing.JButton Cancelar1;
     private javax.swing.JPanel Fondo;
     private javax.swing.JPanel Paciente;
     private javax.swing.JButton btnGuardar;
@@ -482,7 +458,6 @@ public class vtnPacientes extends javax.swing.JDialog implements VentanaRegistra
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox<String> jcbEstatus;
     private javax.swing.JComboBox<String> jcbSexo;
     private javax.swing.JTextField jtfClave;

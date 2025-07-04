@@ -50,7 +50,6 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
         Especialidad = new javax.swing.JPanel();
         jtfClave = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -59,35 +58,22 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
         jLabel15 = new javax.swing.JLabel();
         jtfCamas = new javax.swing.JTextField();
         jtfMedicos = new javax.swing.JTextField();
-        CancelarBtn = new javax.swing.JButton();
         jtfNombre = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
+        Cancelar1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
+        jPanel1.setMinimumSize(new java.awt.Dimension(710, 410));
+
         jPanel2.setBackground(new java.awt.Color(153, 153, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel3.setBackground(new java.awt.Color(102, 204, 255));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 152, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
-
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 450));
 
         Especialidad.setBackground(new java.awt.Color(255, 255, 255));
 
         jtfClave.setEditable(false);
-        jtfClave.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfClave.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfClave.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfClave.setFocusable(false);
         jtfClave.addKeyListener(new java.awt.event.KeyAdapter()
@@ -98,13 +84,13 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel3.setText("Cve:");
 
-        btnGuardar.setBackground(new java.awt.Color(153, 204, 255));
-        btnGuardar.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        btnGuardar.setBackground(new java.awt.Color(153, 153, 255));
+        btnGuardar.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         btnGuardar.setText("Guardar");
-        btnGuardar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        btnGuardar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnGuardar.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -113,13 +99,13 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel4.setText("Número de medicos: ");
 
-        jLabel15.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel15.setText("Número de camas: ");
 
-        jtfCamas.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfCamas.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfCamas.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfCamas.addActionListener(new java.awt.event.ActionListener()
         {
@@ -140,7 +126,7 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
             }
         });
 
-        jtfMedicos.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfMedicos.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfMedicos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfMedicos.addActionListener(new java.awt.event.ActionListener()
         {
@@ -161,19 +147,7 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
             }
         });
 
-        CancelarBtn.setBackground(new java.awt.Color(153, 204, 255));
-        CancelarBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        CancelarBtn.setText("Cancelar");
-        CancelarBtn.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        CancelarBtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                CancelarBtnActionPerformed(evt);
-            }
-        });
-
-        jtfNombre.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfNombre.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfNombre.addActionListener(new java.awt.event.ActionListener()
         {
@@ -194,78 +168,89 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
             }
         });
 
-        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel8.setText("Nombre:");
+
+        Cancelar1.setBackground(new java.awt.Color(153, 153, 255));
+        Cancelar1.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
+        Cancelar1.setText("Cerrar");
+        Cancelar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Cancelar1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                Cancelar1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout EspecialidadLayout = new javax.swing.GroupLayout(Especialidad);
         Especialidad.setLayout(EspecialidadLayout);
         EspecialidadLayout.setHorizontalGroup(
             EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EspecialidadLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
                 .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jtfCamas, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jtfClave, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
-                        .addComponent(jtfNombre))
-                    .addComponent(jtfMedicos, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(37, 37, 37))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EspecialidadLayout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
-                .addComponent(CancelarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(115, 115, 115))
+                    .addGroup(EspecialidadLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3))
+                        .addGap(27, 27, 27)
+                        .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jtfMedicos, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtfCamas, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(EspecialidadLayout.createSequentialGroup()
+                                .addGap(232, 232, 232)
+                                .addComponent(Cancelar1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jtfClave, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(EspecialidadLayout.createSequentialGroup()
+                        .addGap(105, 105, 105)
+                        .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
         EspecialidadLayout.setVerticalGroup(
             EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EspecialidadLayout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(39, 39, 39)
                 .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jtfClave, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
-                .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jtfCamas, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15))
                 .addGap(18, 18, 18)
                 .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jtfMedicos, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(41, 41, 41)
+                    .addComponent(jLabel15)
+                    .addComponent(jtfCamas, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CancelarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(31, Short.MAX_VALUE))
+                    .addComponent(jLabel4)
+                    .addComponent(jtfMedicos, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGroup(EspecialidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cancelar1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24))
         );
 
-        jPanel2.add(Especialidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 620, 370));
+        jPanel2.add(Especialidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 720, 340));
 
-        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 36)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
         jLabel6.setText("-ESPECIALIDADES-");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, -1));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 773, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 2, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -386,12 +371,6 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
         // TODO add your handling code here:
     }//GEN-LAST:event_jtfCamasActionPerformed
 
-    private void CancelarBtnActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_CancelarBtnActionPerformed
-    {//GEN-HEADEREND:event_CancelarBtnActionPerformed
-        CtrlInterfaz.limpia(jtfCamas);
-        CtrlInterfaz.limpia(jtfMedicos);
-    }//GEN-LAST:event_CancelarBtnActionPerformed
-
     private void jtfCamasKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jtfCamasKeyPressed
     {//GEN-HEADEREND:event_jtfCamasKeyPressed
         eliminaCopyPasteCut(evt);
@@ -401,6 +380,11 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
     {//GEN-HEADEREND:event_jtfMedicosKeyPressed
         eliminaCopyPasteCut(evt);
         Validaciones.validaEntero(evt, 2, jtfNombre.getText());    }//GEN-LAST:event_jtfMedicosKeyPressed
+
+    private void Cancelar1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_Cancelar1ActionPerformed
+    {//GEN-HEADEREND:event_Cancelar1ActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_Cancelar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -448,7 +432,7 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton CancelarBtn;
+    private javax.swing.JButton Cancelar1;
     private javax.swing.JPanel Especialidad;
     private javax.swing.JButton btnGuardar;
     private javax.swing.JLabel jLabel15;
@@ -458,7 +442,6 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField jtfCamas;
     private javax.swing.JTextField jtfClave;
     private javax.swing.JTextField jtfMedicos;

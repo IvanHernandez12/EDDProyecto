@@ -46,16 +46,15 @@ public class vtnDependencia extends javax.swing.JDialog implements VentanaRegist
     {
 
         Fondo = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
         Dependencia = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jtfClave = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jcbTipo = new javax.swing.JComboBox<>();
         registrarDepBtn = new javax.swing.JButton();
-        Cancelar = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jtfNombre = new javax.swing.JTextField();
+        Cancelar1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -65,28 +64,13 @@ public class vtnDependencia extends javax.swing.JDialog implements VentanaRegist
         Fondo.setBackground(new java.awt.Color(153, 153, 255));
         Fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(102, 204, 255));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 152, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
-
-        Fondo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 450));
-
         Dependencia.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel5.setText("Cve Dependencia:");
 
         jtfClave.setEditable(false);
-        jtfClave.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfClave.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfClave.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfClave.setFocusable(false);
         jtfClave.addKeyListener(new java.awt.event.KeyAdapter()
@@ -101,17 +85,17 @@ public class vtnDependencia extends javax.swing.JDialog implements VentanaRegist
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel7.setText("Tipo: ");
 
-        jcbTipo.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
+        jcbTipo.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jcbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Opciones-", "Federal", "Estatal", "Municipal" }));
         jcbTipo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        registrarDepBtn.setBackground(new java.awt.Color(153, 204, 255));
-        registrarDepBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        registrarDepBtn.setBackground(new java.awt.Color(153, 153, 255));
+        registrarDepBtn.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         registrarDepBtn.setText("Guardar");
-        registrarDepBtn.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        registrarDepBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         registrarDepBtn.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -120,22 +104,10 @@ public class vtnDependencia extends javax.swing.JDialog implements VentanaRegist
             }
         });
 
-        Cancelar.setBackground(new java.awt.Color(153, 204, 255));
-        Cancelar.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        Cancelar.setText("Cancelar");
-        Cancelar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        Cancelar.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                CancelarActionPerformed(evt);
-            }
-        });
-
-        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel8.setText("Nombre:");
 
-        jtfNombre.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
+        jtfNombre.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jtfNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jtfNombre.addActionListener(new java.awt.event.ActionListener()
         {
@@ -156,66 +128,73 @@ public class vtnDependencia extends javax.swing.JDialog implements VentanaRegist
             }
         });
 
+        Cancelar1.setBackground(new java.awt.Color(153, 153, 255));
+        Cancelar1.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
+        Cancelar1.setText("Cerrar");
+        Cancelar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Cancelar1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                Cancelar1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout DependenciaLayout = new javax.swing.GroupLayout(Dependencia);
         Dependencia.setLayout(DependenciaLayout);
         DependenciaLayout.setHorizontalGroup(
             DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DependenciaLayout.createSequentialGroup()
                 .addGap(38, 38, 38)
+                .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(registrarDepBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel8)
+                        .addComponent(jLabel7)
+                        .addComponent(jLabel5)))
+                .addGap(51, 51, 51)
                 .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8)
-                    .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jcbTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(DependenciaLayout.createSequentialGroup()
-                            .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(registrarDepBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel7)))
-                            .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(DependenciaLayout.createSequentialGroup()
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jtfClave, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(DependenciaLayout.createSequentialGroup()
-                                    .addGap(136, 136, 136)
-                                    .addComponent(Cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(135, Short.MAX_VALUE))
-            .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(DependenciaLayout.createSequentialGroup()
-                    .addGap(240, 240, 240)
-                    .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(134, Short.MAX_VALUE)))
+                    .addGroup(DependenciaLayout.createSequentialGroup()
+                        .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtfClave, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jcbTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(169, Short.MAX_VALUE))
+                    .addGroup(DependenciaLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Cancelar1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(64, 64, 64))))
         );
         DependenciaLayout.setVerticalGroup(
             DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DependenciaLayout.createSequentialGroup()
-                .addContainerGap(89, Short.MAX_VALUE)
+                .addGap(55, 55, 55)
                 .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jtfClave, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23)
-                .addComponent(jLabel8)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DependenciaLayout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(22, 22, 22))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DependenciaLayout.createSequentialGroup()
+                        .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jcbTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(64, 64, 64)
+                    .addComponent(jcbTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
+                .addGap(49, 49, 49)
                 .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(registrarDepBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40))
-            .addGroup(DependenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(DependenciaLayout.createSequentialGroup()
-                    .addGap(144, 144, 144)
-                    .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(199, Short.MAX_VALUE)))
+                    .addComponent(registrarDepBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cancelar1))
+                .addGap(87, 87, 87))
         );
 
-        Fondo.add(Dependencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 630, -1));
+        Fondo.add(Dependencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 710, 340));
 
-        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 36)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
         jLabel6.setText("-DEPENDENCIAS-");
-        Fondo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, -1));
+        Fondo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, -1, -1));
 
         getContentPane().add(Fondo, java.awt.BorderLayout.CENTER);
 
@@ -260,13 +239,6 @@ public class vtnDependencia extends javax.swing.JDialog implements VentanaRegist
     {
         return this.nodoDependencia;
     }
-
-     private void CancelarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_CancelarActionPerformed
-     {//GEN-HEADEREND:event_CancelarActionPerformed
-
-         CtrlInterfaz.limpia(jtfNombre);
-         CtrlInterfaz.limpia(jcbTipo);
-     }//GEN-LAST:event_CancelarActionPerformed
     @Override
     public void cargarDatos(NodoML n)
     {
@@ -321,6 +293,11 @@ public class vtnDependencia extends javax.swing.JDialog implements VentanaRegist
     {//GEN-HEADEREND:event_jtfNombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtfNombreActionPerformed
+
+    private void Cancelar1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_Cancelar1ActionPerformed
+    {//GEN-HEADEREND:event_Cancelar1ActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_Cancelar1ActionPerformed
     public static void main(String[] args)
     {
         vtnDependencia vtn = new vtnDependencia(null, true);
@@ -328,14 +305,13 @@ public class vtnDependencia extends javax.swing.JDialog implements VentanaRegist
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Cancelar;
+    private javax.swing.JButton Cancelar1;
     private javax.swing.JPanel Dependencia;
     private javax.swing.JPanel Fondo;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox<String> jcbTipo;
     private javax.swing.JTextField jtfClave;
     private javax.swing.JTextField jtfNombre;

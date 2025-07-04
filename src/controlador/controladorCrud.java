@@ -416,7 +416,7 @@ public class controladorCrud
 
             } catch (RuntimeException ex)
             {
-                JOptionPane.showMessageDialog(ventanaGeneral, "Debes seleccionar un hospital para eliminar");
+                JOptionPane.showMessageDialog(ventanaGeneral, " Debes seleccionar un hospital para remodelar ");
 
             }
 
@@ -434,7 +434,7 @@ public class controladorCrud
                     {
                         RemodelacionHospitales.remodelacionTErminada(navegador.getElementoActual(), nombreSeleccionado, multilista);
                         Mensaje.exito(ventanaGeneral,
-                                "Hospital remodelado " + nombreSeleccionado);
+                                "Hospital remodelado: " + nombreSeleccionado);
                         ManipulacionArchivos.guarda(ventanaGeneral, multilista, archivos);
                         ManipulacionArchivos.guarda(ventanaGeneral, RemodelacionHospitales.listaRemodelacion, archivoListaHospitalesTemporales);
                         actualizarVista();

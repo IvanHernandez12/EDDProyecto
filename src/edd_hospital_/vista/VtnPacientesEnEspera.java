@@ -135,7 +135,6 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
     {
 
         jPanel1 = new javax.swing.JPanel();
-        jpnLateral = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jpnBotones = new javax.swing.JPanel();
         btnNeurologia = new javax.swing.JButton();
@@ -147,7 +146,7 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 0));
@@ -155,25 +154,14 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(new java.awt.BorderLayout());
 
-        jpnLateral.setBackground(new java.awt.Color(102, 204, 255));
-
-        javax.swing.GroupLayout jpnLateralLayout = new javax.swing.GroupLayout(jpnLateral);
-        jpnLateral.setLayout(jpnLateralLayout);
-        jpnLateralLayout.setHorizontalGroup(
-            jpnLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-        jpnLateralLayout.setVerticalGroup(
-            jpnLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 576, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jpnLateral, java.awt.BorderLayout.LINE_START);
-
         jPanel4.setBackground(new java.awt.Color(255, 102, 204));
         jPanel4.setLayout(new java.awt.BorderLayout());
 
+        btnNeurologia.setBackground(new java.awt.Color(153, 153, 255));
+        btnNeurologia.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        btnNeurologia.setForeground(new java.awt.Color(51, 51, 51));
         btnNeurologia.setText("Pacientes de neurologia");
+        btnNeurologia.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnNeurologia.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -182,7 +170,11 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
             }
         });
 
+        btnOncologia.setBackground(new java.awt.Color(153, 153, 255));
+        btnOncologia.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        btnOncologia.setForeground(new java.awt.Color(51, 51, 51));
         btnOncologia.setText("Pacientes de oncologia");
+        btnOncologia.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnOncologia.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -198,7 +190,7 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
             .addGroup(jpnBotonesLayout.createSequentialGroup()
                 .addGap(119, 119, 119)
                 .addComponent(btnOncologia)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 298, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 236, Short.MAX_VALUE)
                 .addComponent(btnNeurologia)
                 .addGap(145, 145, 145))
         );
@@ -216,7 +208,7 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
 
         jpnSuperior.setBackground(new java.awt.Color(153, 153, 255));
 
-        btnVolver.setText("volver");
+        btnVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edd_hospital_/vista/imagenes/atras.png"))); // NOI18N
         btnVolver.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -225,9 +217,11 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
             }
         });
 
-        lblTitulo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblTitulo.setText("Pacientes en espera: ");
+        lblTitulo.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(51, 51, 51));
+        lblTitulo.setText("-PACIENTES EN ESPERA-");
         lblTitulo.setToolTipText("");
+        lblTitulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout jpnSuperiorLayout = new javax.swing.GroupLayout(jpnSuperior);
         jpnSuperior.setLayout(jpnSuperiorLayout);
@@ -235,16 +229,16 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
             jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnSuperiorLayout.createSequentialGroup()
                 .addGap(54, 54, 54)
-                .addComponent(btnVolver)
-                .addGap(209, 209, 209)
-                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(328, Short.MAX_VALUE))
+                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(85, 85, 85)
+                .addComponent(lblTitulo)
+                .addContainerGap(214, Short.MAX_VALUE))
         );
         jpnSuperiorLayout.setVerticalGroup(
             jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnSuperiorLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addGroup(jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnVolver)
                     .addComponent(lblTitulo))
                 .addContainerGap(37, Short.MAX_VALUE))
@@ -360,7 +354,6 @@ public class VtnPacientesEnEspera extends javax.swing.JFrame
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel jpnBotones;
-    private javax.swing.JPanel jpnLateral;
     private javax.swing.JPanel jpnSuperior;
     private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables

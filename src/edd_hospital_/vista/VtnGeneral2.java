@@ -115,7 +115,6 @@ public class VtnGeneral2 extends javax.swing.JFrame
     {
 
         jPanel1 = new javax.swing.JPanel();
-        jpnLateral = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jpnBotones = new javax.swing.JPanel();
         btnNuevo = new javax.swing.JButton();
@@ -127,8 +126,8 @@ public class VtnGeneral2 extends javax.swing.JFrame
         btnRemodelacionTerminada = new javax.swing.JButton();
         jpnSuperior = new javax.swing.JPanel();
         panelNavegacion = new javax.swing.JPanel();
-        btnVolver = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
+        btnVolver = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtbTabla = new javax.swing.JTable();
 
@@ -140,25 +139,15 @@ public class VtnGeneral2 extends javax.swing.JFrame
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(new java.awt.BorderLayout());
 
-        jpnLateral.setBackground(new java.awt.Color(102, 204, 255));
-
-        javax.swing.GroupLayout jpnLateralLayout = new javax.swing.GroupLayout(jpnLateral);
-        jpnLateral.setLayout(jpnLateralLayout);
-        jpnLateralLayout.setHorizontalGroup(
-            jpnLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-        jpnLateralLayout.setVerticalGroup(
-            jpnLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 604, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jpnLateral, java.awt.BorderLayout.LINE_START);
-
-        jPanel4.setBackground(new java.awt.Color(255, 102, 204));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setLayout(new java.awt.BorderLayout());
 
+        jpnBotones.setBackground(new java.awt.Color(204, 204, 204));
+
+        btnNuevo.setBackground(new java.awt.Color(153, 153, 255));
+        btnNuevo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnNuevo.setText("Nuevo");
+        btnNuevo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnNuevo.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -167,7 +156,10 @@ public class VtnGeneral2 extends javax.swing.JFrame
             }
         });
 
+        btnEliminar.setBackground(new java.awt.Color(153, 153, 255));
+        btnEliminar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnEliminar.setText("Eliminar");
+        btnEliminar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnEliminar.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -176,9 +168,15 @@ public class VtnGeneral2 extends javax.swing.JFrame
             }
         });
 
+        btnModificar.setBackground(new java.awt.Color(153, 153, 255));
+        btnModificar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnModificar.setText("Modificar");
+        btnModificar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        btnEspera.setBackground(new java.awt.Color(153, 153, 255));
+        btnEspera.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnEspera.setText("Mostrar pacientes en espera");
+        btnEspera.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnEspera.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -187,7 +185,10 @@ public class VtnGeneral2 extends javax.swing.JFrame
             }
         });
 
+        btnAltaPaciente.setBackground(new java.awt.Color(153, 153, 255));
+        btnAltaPaciente.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnAltaPaciente.setText("Dar de alta paciente");
+        btnAltaPaciente.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAltaPaciente.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -196,7 +197,10 @@ public class VtnGeneral2 extends javax.swing.JFrame
             }
         });
 
+        btnRemodelacion.setBackground(new java.awt.Color(153, 153, 255));
+        btnRemodelacion.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnRemodelacion.setText("Remodelacion de Hospital");
+        btnRemodelacion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnRemodelacion.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -205,7 +209,10 @@ public class VtnGeneral2 extends javax.swing.JFrame
             }
         });
 
+        btnRemodelacionTerminada.setBackground(new java.awt.Color(153, 153, 255));
+        btnRemodelacionTerminada.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnRemodelacionTerminada.setText("Remodelacion Terminada");
+        btnRemodelacionTerminada.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout jpnBotonesLayout = new javax.swing.GroupLayout(jpnBotones);
         jpnBotones.setLayout(jpnBotonesLayout);
@@ -220,44 +227,49 @@ public class VtnGeneral2 extends javax.swing.JFrame
                 .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnAltaPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnRemodelacionTerminada))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
-                .addComponent(btnNuevo)
-                .addGap(47, 47, 47)
-                .addComponent(btnModificar)
-                .addGap(43, 43, 43)
-                .addComponent(btnEliminar)
-                .addGap(66, 66, 66))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(btnModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jpnBotonesLayout.setVerticalGroup(
             jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnBotonesLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpnBotonesLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnRemodelacion)
-                            .addComponent(btnAltaPaciente))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnRemodelacionTerminada)
-                            .addComponent(btnEspera)))
-                    .addGroup(jpnBotonesLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnNuevo)
-                            .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(btnEliminar)
-                                .addComponent(btnModificar)))))
+                    .addComponent(btnRemodelacion)
+                    .addComponent(btnAltaPaciente))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRemodelacionTerminada)
+                    .addComponent(btnEspera))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnBotonesLayout.createSequentialGroup()
+                .addGroup(jpnBotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEliminar)
+                    .addComponent(btnModificar)
+                    .addComponent(btnNuevo))
+                .addGap(23, 23, 23))
         );
 
         jPanel4.add(jpnBotones, java.awt.BorderLayout.PAGE_END);
 
         jpnSuperior.setBackground(new java.awt.Color(153, 153, 255));
+        jpnSuperior.setForeground(new java.awt.Color(153, 153, 255));
 
+        panelNavegacion.setBackground(new java.awt.Color(255, 255, 255));
         panelNavegacion.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 15));
 
-        btnVolver.setText("volver");
+        lblTitulo.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        lblTitulo.setText("TIPO_NIVEL");
+        lblTitulo.setToolTipText("");
+        lblTitulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        btnVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edd_hospital_/vista/imagenes/atras.png"))); // NOI18N
+        btnVolver.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnVolver.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -266,34 +278,31 @@ public class VtnGeneral2 extends javax.swing.JFrame
             }
         });
 
-        lblTitulo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblTitulo.setText("TIPO_NIVEL");
-        lblTitulo.setToolTipText("");
-
         javax.swing.GroupLayout jpnSuperiorLayout = new javax.swing.GroupLayout(jpnSuperior);
         jpnSuperior.setLayout(jpnSuperiorLayout);
         jpnSuperiorLayout.setHorizontalGroup(
             jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnSuperiorLayout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addGroup(jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jpnSuperiorLayout.createSequentialGroup()
-                        .addComponent(btnVolver)
-                        .addGap(233, 233, 233)
-                        .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addGap(24, 24, 24)
+                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panelNavegacion, javax.swing.GroupLayout.DEFAULT_SIZE, 785, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jpnSuperiorLayout.createSequentialGroup()
+                .addGap(314, 314, 314)
+                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jpnSuperiorLayout.setVerticalGroup(
             jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnSuperiorLayout.createSequentialGroup()
+            .addGroup(jpnSuperiorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblTitulo)
                 .addGap(25, 25, 25)
-                .addGroup(jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnVolver)
-                    .addComponent(lblTitulo))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(panelNavegacion, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addGroup(jpnSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panelNavegacion, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         jPanel4.add(jpnSuperior, java.awt.BorderLayout.PAGE_START);
@@ -444,12 +453,6 @@ public class VtnGeneral2 extends javax.swing.JFrame
     }
 
 
-    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVolverActionPerformed
-    {//GEN-HEADEREND:event_btnVolverActionPerformed
-
-
-    }//GEN-LAST:event_btnVolverActionPerformed
-
     public JButton getBtnModificar()
     {
         return btnModificar;
@@ -484,6 +487,11 @@ public class VtnGeneral2 extends javax.swing.JFrame
     {//GEN-HEADEREND:event_btnRemodelacionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRemodelacionActionPerformed
+
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVolverActionPerformed
+    {//GEN-HEADEREND:event_btnVolverActionPerformed
+
+    }//GEN-LAST:event_btnVolverActionPerformed
 
     public JButton getBtnAltaPaciente()
     {
@@ -603,7 +611,6 @@ public class VtnGeneral2 extends javax.swing.JFrame
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel jpnBotones;
-    private javax.swing.JPanel jpnLateral;
     private javax.swing.JPanel jpnSuperior;
     private javax.swing.JTable jtbTabla;
     private javax.swing.JLabel lblTitulo;
