@@ -173,7 +173,7 @@ public class vtnEspecialidad extends javax.swing.JDialog implements VentanaRegis
 
         Cancelar1.setBackground(new java.awt.Color(153, 153, 255));
         Cancelar1.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
-        Cancelar1.setText("Limpiar");
+        Cancelar1.setText("Cerrar");
         Cancelar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Cancelar1.addActionListener(new java.awt.event.ActionListener()
         {

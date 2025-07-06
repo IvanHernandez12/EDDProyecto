@@ -41,6 +41,11 @@ public class CrudEspecialidad implements Crudable
             throw new IllegalArgumentException("La ruta no puede ser nula ni vacía.");
         }
 
+        if (Crudable.existeEseNombreEnRuta(multilista, nodoAInsertar, ruta))
+        {
+
+            throw new IllegalArgumentException("ya existe un elemento con ese nombre ");
+        }
         NodoML hospitalPadre = multilista.buscarEnMultilista(ruta);
         if (hospitalPadre == null || hospitalPadre.getObj() == null)
         {

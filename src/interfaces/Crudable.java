@@ -30,7 +30,8 @@ public interface Crudable
             throw new IllegalArgumentException("No pueden ser nulos");
 
         }
-        String rutaCompleta[] = Navegador.crearRutaCompleta(ruta, nodoAInsertar.getEt());
+
+        String rutaCompleta[] = Navegador.crearRutaCompleta(ruta, nodoAInsertar.getEt().toLowerCase().trim());
         NodoML nodoExistente = multilista.buscarEnMultilista(rutaCompleta);
         return nodoExistente != null;
     }

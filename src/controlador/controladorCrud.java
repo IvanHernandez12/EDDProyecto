@@ -124,6 +124,8 @@ public class controladorCrud
             if (nivelActual != null)
             {
                 ventanaGeneral.mostrarEnLaTabla(modeloTabla, nivelActual.getAbj());
+            }else{
+                System.out.println("Nivel actual es null");
             }
 
         }
